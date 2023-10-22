@@ -686,7 +686,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   line-height: 1.1;
   display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   margin: 0.625rem 0 0;
 }
 .intro-header .post-heading .post-subheading {
@@ -694,7 +694,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 }
 .intro-header.big-img .page-heading .page-subheading,
 .intro-header.big-img .post-heading .post-subheading {
-  font-weight: 400;
+  font-weight: 300;
 }
 .intro-header.big-img .page-heading hr {
   box-shadow: 1px 1px 3px #000;
