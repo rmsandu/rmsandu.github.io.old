@@ -1,6 +1,6 @@
 ---
 layout: post
-title: >
+title: >-
   How to generate images with stable diffusion and a custom Gradio app interface
   for free
 subtile: What I learned (so far) about stable diffusion
@@ -39,9 +39,9 @@ The current iteration of Stable Diffusion represents a knowledge-distilled, more
 
 #### Advantages
 
-- **Up to 100% Faster Inferences:** The distilled models exhibit significantly faster inference times.
-- **Up to 30% Lower VRAM Footprint:** Resource efficiency is enhanced with a reduced VRAM footprint.
-- **Faster Dreambooth and LoRA Training:** Improved speed in Dreambooth and LoRA training processes.
+- Up to 100% Faster Inferences: The distilled models exhibit significantly faster inference times.
+- Up to 30% Lower VRAM Footprint: Resource efficiency is enhanced with a reduced VRAM footprint.
+- Faster Dreambooth and LoRA Training: Improved speed in Dreambooth and LoRA training processes.
 
 #### Limitations
 
@@ -61,7 +61,7 @@ The tricky part was working with HTML and CSS to add my own custom changes. I fi
 
 Besides their standard orange theme, Gradio offers a few other in-built [themes](https://www.gradio.app/main/docs/themes) in different colors and different fonts. However, I found the options quite limited. The good part is that you can directly test into the Gradio any changes you make to a theme and see how it looks like. Here is how that looks like: #todo insert pic
 
-Many creative people created their own themes, ranging from anime girls to the popular "Dracula" theme, and deployed these on [Hugging Face Spaces](https://huggingface.co/spaces/gradio/theme-gallery). I selected the "JohnSmith9982/small_and_pretty" pretty theme because the green colors went well with my background picture which I added using a small custom CSS code. Both the theme and CSS code can be directly passed to`gradio.Blocks()`. Gradio's Blocks API serves as a low-level interface for crafting highly customizable web applications and demos entirely in Python. It surpasses the Interface class from Gradio in flexibility, offering control over component layout, event triggers for function execution, and data flows between inputs and outputs. Blocks also supports the grouping of related demos, such as through tabs.
+Many creative people created their own themes, ranging from anime girls to the popular "Dracula" theme, and deployed these on [Hugging Face Spaces](https://huggingface.co/spaces/gradio/theme-gallery). I selected the "JohnSmith9982/small_and_pretty" pretty theme because the green colors went well with my background picture which I added using a small custom CSS code. Both the theme and CSS code can be directly passed to`gradio.Blocks()`. Gradio's Blocks API serves as a low-level interface for crafting highly customizable web applications and demos entirely in Python. It surpasses the `Interface` class from Gradio in flexibility, offering control over component layout, event triggers for function execution, and data flows between inputs and outputs. Blocks also supports the grouping of related demos, such as through tabs.
 
 #### Basic Usage
 
@@ -92,4 +92,3 @@ footer {
 with gr.Blocks(theme=theme, css=css_code) as demo:
       ....
 ~~~
-
