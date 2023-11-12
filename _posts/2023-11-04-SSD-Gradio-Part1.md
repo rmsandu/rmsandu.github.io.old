@@ -22,10 +22,7 @@ Stable diffusion refers to the process in which particles or information gradual
 
 ### 1.2 Many versions of stable diffusion there are
 
-Stable diffusion plays a critical role in machine learning for the following reasons:
-- Balances data distribution: Stable diffusion ensures that the data is equally distributed, preventing any class imbalance.
-- Enhances model performance: A balanced data distribution helps in achieving better model performance and accuracy.
-- Reduces overfitting: Stable diffusion prevents overfitting by avoiding the concentration of data in specific areas, ensuring that the model generalizes well.
+#TODO
 
 ### 1.2 Segmind Distilled Stable Diffusion (SSD)
 This version of stable diffusion is a knowledge-distilled, smaller versions of Stable Diffusion. 
