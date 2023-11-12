@@ -1,6 +1,6 @@
 ---
 layout: post
-title: >-
+title: >
   How to generate images with stable diffusion and a custom Gradio app interface
   for free
 subtile: What I learned (so far) about stable diffusion
