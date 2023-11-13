@@ -51,13 +51,13 @@ While promising, it's essential to acknowledge the early stage of the distilled 
 
 ### 2.1 Installing Gradio and getting the hang of it
 
-Gradio continously updates their app so be careful what version you use. While writing this code they just updated to the version 4.2.0 and my code broke :). Take a look at the latest changes and if they are breaking ones in their [CHANGELOG](https://github.com/gradio-app/gradio/blob/main/CHANGELOG.md)
+Gradio continously updates their app so be careful what version you use. While writing this code they just updated to the version 4.2.0 and my code broke :). Take a look at the latest changes and if they are breaking ones in their [CHANGELOG](https://github.com/gradio-app/gradio/blob/main/CHANGELOG.md) .
 
 The tricky part was working with HTML and CSS to add my own custom changes. I fiddled a lot with the right changes and for the life of me I couldn't get the color of the background text to change to white.  
 
-Besides their standard orange theme, Gradio offers a few other in-built [themes](https://www.gradio.app/main/docs/themes) in different colors and different fonts. However, I found the options quite limited. The good part is that you can directly test into the Gradio any changes you make to a theme and see how it looks like. Here is how that looks like: #todo insert pic
+Besides their standard orange theme, Gradio offers a few other in-built [themes](https://www.gradio.app/main/docs/themes) in different colors and different fonts. However, I found the options quite limited. The good part is that you can directly [test into the Gradio](https://www.gradio.app/guides/theming-guide) any changes you make to a theme and see how it looks like.
 
-Many creative people created their own themes, ranging from anime girls to the popular "Dracula" theme, and deployed these on [Hugging Face Spaces](https://huggingface.co/spaces/gradio/theme-gallery). I selected the "JohnSmith9982/small_and_pretty" pretty theme because the green colors went well with my background picture which I added using a small custom CSS code. Both the theme and CSS code can be directly passed to`gradio.Blocks()`. Gradio's Blocks API serves as a low-level interface for crafting highly customizable web applications and demos entirely in Python. It surpasses the `Interface` class from Gradio in flexibility, offering control over component layout, event triggers for function execution, and data flows between inputs and outputs. Blocks also supports the grouping of related demos, such as through tabs.
+Many creative people built their own themes, ranging from anime girls to the popular "Dracula" theme, and deployed these on [Hugging Face Spaces](https://huggingface.co/spaces/gradio/theme-gallery). I selected the "JohnSmith9982/small_and_pretty" pretty theme because the green colors went well with my background picture which I added using a small custom CSS code. Both the theme and CSS code can be directly passed to`gradio.Blocks()`. Gradio's Blocks API serves as a low-level interface for crafting highly customizable web applications and demos entirely in Python. It surpasses the `Interface` class from Gradio in flexibility, offering control over component layout, event triggers for function execution, and data flows between inputs and outputs. Blocks also supports the grouping of related demos, such as through tabs.
 
 #### Basic Usage
 
@@ -88,3 +88,4 @@ footer {
 with gr.Blocks(theme=theme, css=css_code) as demo:
       ....
 ~~~
+To be continued....
