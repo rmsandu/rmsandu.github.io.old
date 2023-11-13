@@ -20,9 +20,9 @@ author: Raluca-Maria Sandu
 ###############################################
 
 navbar-links:
-  About Me: "bio"
+  About Me: "aboutme"
   Resume: "resume"
-  Blog: "posts"
+  Blog: "blog"
   #  - Beautiful Jekyll: "https://beautifuljekyll.com"
   #  - Learn markdown: "https://www.markdowntutorial.com/"
   #Author's home: "https://deanattali.com"
