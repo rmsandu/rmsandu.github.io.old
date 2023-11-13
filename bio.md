@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Speaker profile
+title: A short bio
 published: true
 ---
 
