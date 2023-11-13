@@ -4,6 +4,6 @@ title: About me
 published: true
 ---
 
-**Work:** I am a Machine Learning Engineer working at [Accenture Liquid Studio](https://www.accenture.com/ch-en/services/interactive/innovation-hub-zurich). My research interests lie in the application of machine learning methods for image and language tasks. This is my little corner of internet where you can see my latest personal projects or tutorials.
+I am a Machine Learning Engineer with a background in research and academia. My expertise centers on applying machine learning techniques to image and language processing tasks. Welcome to my corner of the internet, where I showcase my latest personal projects and tutorials.
 
 
