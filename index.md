@@ -1,6 +1,6 @@
 ---
 layout: home
-title: About me
+title: Raluca-Maria Sandu
 published: true
 ---
 
