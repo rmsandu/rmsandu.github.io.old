@@ -13,9 +13,9 @@ html {
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 1.125rem;
-  color: {{ site.text-col | default: "#404040" }};
+  color: {{ site.text-col | default: "#F8F8F2" }};
   position: relative;
-  background-color: {{ site.page-col | default: "#FFFFFF" }};
+  background-color: {{ site.page-col | default: "#282A36" }};
   {% if site.page-img %}
   background-image: url({{ site.page-img | relative_url }});
   background-attachment: fixed;
@@ -33,12 +33,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1 {
   font-size: 1rem;
+  color: #ffffff;
 }
 h2 {
   font-size: 1.875rem;
+  color: #bd93f9 
 }
 h3 {
   font-size: 1.5rem;
+  color: #ff79c6
 }
 h4 {
   font-size: 1.125rem;
@@ -47,7 +50,7 @@ h1, h2, h3, h4 {
   margin-top: 1.25rem;
 }
 a {
-  color: {{ site.link-col | default: "#008AFF" }};
+  color: {{ site.link-col | default: "#8BE9FD" }};
 }
 a:hover,
 a:focus {
@@ -553,6 +556,7 @@ footer .footer-custom-content {
 
 .post-preview .post-read-more {
   font-weight: 800;
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -570,7 +574,7 @@ footer .footer-custom-content {
 }
 
 .blog-tags span {
-  color: {{ site.text-col | default: "#404040" }};
+  color: {{ site.text-col | default: "#ffff" }};
   opacity: 0.8;
 }
 
@@ -579,7 +583,7 @@ footer .footer-custom-content {
 }
 
 .blog-tags a {
-  color: {{ site.text-col | default: "#404040" }};
+  color: {{ site.text-col | default: "#8be9fd" }};
   text-decoration: none;
   padding: 0 0.3125rem;
   opacity: 0.8;
@@ -608,10 +612,11 @@ footer .footer-custom-content {
 
 .tag-btn {
   margin: 0.3125rem;
+ 
 }
 
 #full-tags-list {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #ffffff;
 }
 
 #full-tags-list .tag-entry {
@@ -865,7 +870,7 @@ table tr td :last-child {
 code {
   padding: 0.125rem 0.25rem;
   color: #c7254e;
-  background-color: #f9f2f4;
+  background-color: #efe6e6;
   border-radius: 0.25rem;
 }
 
@@ -884,9 +889,11 @@ pre {
 .highlight pre {
   border: none;
   background: none;
+  background-color: #929235;
   margin: 0;
 }
 .highlight > pre {
+  background-color: #f8f8f2;
   background-image: linear-gradient(
     rgba(0,0,0,0.03), rgba(0,0,0,0.03) 1.5em, rgba(0,0,0,0.02) 1.5em, rgba(0,0,0,0.02) 3em);
   background-size: auto 3em;
