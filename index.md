@@ -27,7 +27,7 @@ I am an Applied Research Scientist with a PhD degree in Biomedical Engineering a
             <ul>
                 <li>Developed image processing and computer vision workflows for numerical evaluation of image-based liver cancer therapies in clinical interventions.</li>
                 <li>Led the integration of AI/ML technologies in cross-functional European teams from 3 different countries (Netherlands, Sweden, Switzerland) formed of engineers, radiologists and surgeons to implement data-driven decisions minimally invasive ablation treatments.</li>
-                <li>Build statistical, mathematical and ML models using Python, R, and SQL to curate and analyze large, multimodal data including images (CT, MRI) and patient records (numerical, sensors) from European patient clinical trials. This research was deployed into a commercial healthcare product at a Swiss company: AblaSure.</li>
+                <li>Build statistical, mathematical and ML models using Python, R, and SQL to curate and analyze large, multimodal data including images (CT, MRI) and patient records (numerical, sensors) from European patient clinical trials.</li>
                 <li>Authored peer-reviewed publications and presented at conferences on the topic of computer-assisted medical imaging technologies.</li>
             </ul>
         </div>
@@ -47,8 +47,8 @@ I am an Applied Research Scientist with a PhD degree in Biomedical Engineering a
         <h4 class="job-title">PhD in Biomedical Engineering | University of Bern | Bern, Switzerland</h4>
         <div class="job-description">
             <ul>
-                <li>Thesis topics: “Quantitative assessment of ablation treatments for liver tumours — image-based efficacy analysis and predictive modelling”.</li>
-                <li>My main publication here: <a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2021.623098/full">Volumetric Quantitative Ablation Margins for Assessment of Ablation Completeness in Thermal Ablation of Liver Tumors</a>, published in Frontiers in Oncology, Cancer Imaging and Image-directed Interventions, 2021.</li>
+                <li>Thesis: “Quantitative assessment of ablation treatments for liver tumours — image-based efficacy analysis and predictive modelling”.</li>
+                <li>My main publication can be found here: <a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2021.623098/full">Volumetric Quantitative Ablation Margins for Assessment of Ablation Completeness in Thermal Ablation of Liver Tumors</a>, published in Frontiers in Oncology, Cancer Imaging and Image-directed Interventions, 2021.</li>
             </ul>
         </div>
     </div>
