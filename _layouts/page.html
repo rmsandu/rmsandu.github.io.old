@@ -26,6 +26,9 @@ layout: base
       {% endif %}
 
       {% include comments.html %}
+    {% if page.js %}
+    <script src="{{ page.js | relative_url }}"></script>
+    {% endif %}
     </div>
   </div>
 </div>
