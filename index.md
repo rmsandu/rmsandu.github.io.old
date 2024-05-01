@@ -27,7 +27,7 @@ I am an Applied Research Scientist with a PhD degree in Biomedical Engineering a
             <ul>
                 <li>Developed image processing and computer vision workflows for numerical evaluation of image-based liver cancer therapies in clinical interventions.</li>
                 <li>Led the integration of AI/ML technologies in cross-functional European teams from 3 different countries (Netherlands, Sweden, Switzerland) formed of engineers, radiologists and surgeons to implement data-driven decisions minimally invasive ablation treatments.</li>
-                <li>Build statistical, mathematical and ML models using Python, R, and SQL to curate and analyze large, multimodal data including images (CT, MRI) and patient records (numerical, sensors) from European patient clinical trials.</li>
+                <li>Build statistical, mathematical and ML models using Python, R, and SQL to curate and analyze large, multimodal data including images (CT, MRI) and patient records from European patient clinical trials.</li>
                 <li>Authored peer-reviewed publications and presented at conferences on the topic of computer-assisted medical imaging technologies.</li>
             </ul>
         </div>
