@@ -1,5 +1,4 @@
 ---
-
 layout: home
 published: true
 full-width: true
@@ -14,6 +13,7 @@ I am an Applied Research Scientist with a PhD degree in Biomedical Engineering a
         <h4 class="job-title">Machine Learning Consultant |Accenture|Zurich, Switzerland|2022-Present</h4>
         <div class="job-description">
             <ul>
+                <li>Team lead machine learning projects (PoCs, Production) from ideation to delivery.</li>
                 <li>Leveraging unconditional generative modeling algorithms for neural implicit fields with OpenAI, Python, and PyTorch.</li>
                 <li>Building a Stable Diffusion prototype pipeline using fine tuning, in-painting, knowledge distillation, Gradio (front-end) and AWS (back-end) for data synthesis.</li>
                 <li>Applying computer vision models (YOLO, SAM, OWL, Pytorch, MONAI, Vision Foundation Models) for image classification and object detection in manufacturing, life sciences energy sectors.</li>
@@ -28,7 +28,7 @@ I am an Applied Research Scientist with a PhD degree in Biomedical Engineering a
                 <li>Developed image processing and computer vision workflows for numerical evaluation of image-based liver cancer therapies in clinical interventions.</li>
                 <li>Led the integration of AI/ML technologies in cross-functional European teams from 3 different countries (Netherlands, Sweden, Switzerland) formed of engineers, radiologists and surgeons to implement data-driven decisions minimally invasive ablation treatments.</li>
                 <li>Build statistical, mathematical and ML models using Python, R, and SQL to curate and analyze large, multimodal data including images (CT, MRI) and patient records (numerical, sensors) from European patient clinical trials. This research was deployed into a commercial healthcare product at a Swiss company: AblaSure.</li>
-                <li>Contributed to 5 peer-reviewed publications and presented at conferences on the topic of computer-assisted medical imaging technologies.</li>
+                <li>Authored peer-reviewed publications and presented at conferences on the topic of computer-assisted medical imaging technologies.</li>
             </ul>
         </div>
     </div>
