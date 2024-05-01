@@ -10,7 +10,7 @@ I am an Applied Research Scientist with a PhD degree in Biomedical Engineering a
 <div id="resume-content">
     <h2>Experience</h2>
     <div class="job">
-        <h4 class="job-title">Machine Learning Consultant |Accenture|Zurich, Switzerland|2022-Present</h4>
+        <h4 class="job-title">Machine Learning Consultant | Accenture | Zurich, Switzerland | 2022-Present</h4>
         <div class="job-description">
             <ul>
                 <li>Team lead machine learning projects (PoCs, Production) from ideation to delivery.</li>
@@ -22,7 +22,7 @@ I am an Applied Research Scientist with a PhD degree in Biomedical Engineering a
         </div>
     </div>
     <div class="job">
-        <h4 class="job-title">PhD Researcher |University of Bern|Bern, Switzerland|2017-2022</h4>
+        <h4 class="job-title">PhD Researcher | University of Bern|Bern, Switzerland | 2017-2022</h4>
         <div class="job-description">
             <ul>
                 <li>Developed image processing and computer vision workflows for numerical evaluation of image-based liver cancer therapies in clinical interventions.</li>
@@ -33,7 +33,7 @@ I am an Applied Research Scientist with a PhD degree in Biomedical Engineering a
         </div>
     </div>
         <div class="job">
-        <h4 class="job-title">Junior Research Scientist |Philips Research|Eindhoven, Netherlands|2016-2017</h4>
+        <h4 class="job-title">Junior Research Scientist | Philips Research|Eindhoven, Netherlands | 2016-2017 </h4>
         <div class="job-description">
             <ul>
                 <li>Designed and implemented one custom front-end web application for image annotation and labeling (Python, Javascript, HTML and CSS) that sped up the data acquisition and pre-processing by 95%.</li>
