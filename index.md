@@ -1,17 +1,14 @@
 ---
 layout: home
 published: true
-full-width: true
+full-width: false
 ---
 
 I am an Applied Research Scientist with a PhD degree in Biomedical Engineering and 10+ years of hands-on practical experience in the field of AI/ML. Adept at developing research into innovative solutions that create business value. Resourceful communicator and stakeholder manager, leveraging listening and organizational abilities to solve complex challenges in a harmonious manner.Welcome to my website, where I write about my latest personal projects, tutorials, and other experiments (at irregularly spaced time intervals). Get in contact with me at **raluca[at]rmsandu[dot]net**.
 
 <!-- Your resume content goes here -->
-<div id="resume-content">
-    <h2>Experience</h2>
-    <div class="job">
-        <h4 class="job-title">Machine Learning Consultant | Accenture | Zurich, Switzerland | 2022-Present</h4>
-        <div class="job-description">
+<h1>Experience</h1>
+<h2>Machine Learning Consultant | Accenture | Zurich, Switzerland | 2022-Present</h2>
             <ul>
                 <li>Team lead machine learning projects (PoCs, Production) from ideation to delivery.</li>
                 <li>Leveraging unconditional generative modeling algorithms for neural implicit fields with OpenAI, Python, and PyTorch.</li>
@@ -20,7 +17,7 @@ I am an Applied Research Scientist with a PhD degree in Biomedical Engineering a
                 <li>Designing and teaching using Generative AI tools for Marketing & Design (Midjourney, Adobe, DALL-E, Stable Diffusion).</li>
             </ul>
         </div>
-    </div>
+</div>
     <div class="job">
         <h4 class="job-title">PhD Researcher | University of Bern|Bern, Switzerland | 2017-2022</h4>
         <div class="job-description">
