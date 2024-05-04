@@ -3,66 +3,40 @@ layout: home
 published: true
 full-width: false
 ---
-
-I am an Applied Research Scientist with a PhD degree in Biomedical Engineering and 10+ years of hands-on practical experience in the field of AI/ML. Adept at developing research into innovative solutions that create business value. Resourceful communicator and stakeholder manager, leveraging listening and organizational abilities to solve complex challenges in a harmonious manner.Welcome to my website, where I write about my latest personal projects, tutorials, and other experiments (at irregularly spaced time intervals). Get in contact with me at **raluca[at]rmsandu[dot]net**.
-
-<!-- Your resume content goes here -->
-<h1>Experience</h1>
-<h2>Machine Learning Consultant | Accenture | Zurich, Switzerland | 2022-Present</h2>
-            <ul>
-                <li>Team lead machine learning projects (PoCs, Production) from ideation to delivery.</li>
-                <li>Leveraging unconditional generative modeling algorithms for neural implicit fields with OpenAI, Python, and PyTorch.</li>
-                <li>Building a Stable Diffusion prototype pipeline using fine tuning, in-painting, knowledge distillation, Gradio (front-end) and AWS (back-end) for data synthesis.</li>
-                <li>Applying computer vision models (YOLO, SAM, OWL, Pytorch, MONAI, Vision Foundation Models) for image classification and object detection in manufacturing, life sciences energy sectors.</li>
-                <li>Designing and teaching using Generative AI tools for Marketing & Design (Midjourney, Adobe, DALL-E, Stable Diffusion).</li>
-            </ul>
-        </div>
-</div>
+<body>
+    <h2>EXPERIENCE</h2>
     <div class="job">
-        <h4 class="job-title">PhD Researcher | University of Bern|Bern, Switzerland | 2017-2022</h4>
-        <div class="job-description">
-            <ul>
-                <li>Developed image processing and computer vision workflows for numerical evaluation of image-based liver cancer therapies in clinical interventions.</li>
-                <li>Led the integration of AI/ML technologies in cross-functional European teams from 3 different countries (Netherlands, Sweden, Switzerland) formed of engineers, radiologists and surgeons to implement data-driven decisions minimally invasive ablation treatments.</li>
-                <li>Build statistical, mathematical and ML models using Python, R, and SQL to curate and analyze large, multimodal data including images (CT, MRI) and patient records from European patient clinical trials.</li>
-                <li>Authored peer-reviewed publications and presented at conferences on the topic of computer-assisted medical imaging technologies.</li>
-            </ul>
-        </div>
-    </div>
-        <div class="job">
-        <h4 class="job-title">Junior Research Scientist | Philips Research|Eindhoven, Netherlands | 2016-2017 </h4>
-        <div class="job-description">
-            <ul>
-                <li>Designed and implemented one custom front-end web application for image annotation and labeling (Python, Javascript, HTML and CSS) that sped up the data acquisition and pre-processing by 95%.</li>
-                <li>Implemented AI/ML computer vision algorithms for automatic real-time detection and semantic segmentation of skin structures with 98% accuracy.</li>
-                <li>Applied image processing and statistical methods for quantifying the effect of diet on people's facial appearance with statistical metrics.</li>
-            </ul>
-        </div>
-    </div>
-    <h2>Education</h2>
-    <div class="job">
-        <h4 class="job-title">PhD in Biomedical Engineering | University of Bern | Bern, Switzerland</h4>
-        <div class="job-description">
-            <ul>
-                <li>Thesis: “Quantitative assessment of ablation treatments for liver tumours — image-based efficacy analysis and predictive modelling”.</li>
-                <li>My main publication can be found here: <a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2021.623098/full">Volumetric Quantitative Ablation Margins for Assessment of Ablation Completeness in Thermal Ablation of Liver Tumors</a>, published in Frontiers in Oncology, Cancer Imaging and Image-directed Interventions, 2021.</li>
-            </ul>
-        </div>
+        <h3>Machine Learning Engineer | Accenture | Zurich, Switzerland | June 2022 - Present</h3>
+        <ul>
+            <li>Train image diffusion pipeline that generated novel, unseen 3D shoe shapes 90% faster than conventional manual design methods, leveraging advanced generative modeling algorithms of neural implicit fields with OpenAI, Python, and PyTorch.</li>
+            <li>Build Stable Diffusion prototypes pipeline using fine tuning, in-painting, knowledge distillation, Gradio (front-end) and AWS (back-end) for data synthesis.</li>
+            <li>Apply computer vision models (YOLO, SAM, OWL, Pytorch, MONAI, Vision Foundation Models) for image classification and object detection in manufacturing, life sciences and energy sectors.</li>
+            <li>Teach Design & Marketing coursesusing Generative AI tools (Midjourney, Adobe, DALL-E, Stable Diffusion).</li>
+            <li>Author business proposals proving the tangible business value of using AI/ML in banking, energy, manufacturing, and life sciences industries.</li>
+        </ul>
     </div>
     <div class="job">
-        <h4 class="job-title">MSc in Biomedical Engineering | RWTH Aachen University | Aachen, Germany</h4>
-        <div class="job-description">
-            <ul>
-                <li>Thesis: “Image Segmentation and Semantic Description: Tools and Analytics”. Implemented computer vision algorithms for segmentation and classification of skin structures as part of a research project at Philips Research that achieved 98% accuracy with Random Forests.</li>
-            </ul>
-        </div>
+        <h3>PhD Researcher at ARTORG Center for Biomedical Engineering Research | University of Bern | Bern, Switzerland | 2017 - 2022</h3>
+        <ul>
+            <li>Developed image processing and computer vision workflows for numerical evaluation of image-based liver cancer therapies in clinical interventions.</li>
+            <li>Led the integration of AI/ML technologies in cross-functional European teams from 3 different countries formed of engineers, radiologists and surgeons to implement data-driven decisions minimally invasive ablation treatments.</li>
+            <li>Build statistical, mathematical and ML models using Python, R, and SQL to curate and analyze large, multimodal data including images (CT, MRI) and patient records from European patient clinical trials.</li>
+            <li>Contributed topeer-reviewed publications and presented at conferences on the topic of computer-assisted medical imaging technologies.</li>
+        </ul>
     </div>
     <div class="job">
-        <h4 class="job-title">BSc in Applied Computer Science | Politehnica University of Bucharest | Minor in Control Engineering | Bucharest, Romania</h4>
-        <div class="job-description">
-            <ul>
-                <li>Thesis: “Volumetric Capnography Respiratory Signals for Spontaneously Breathing Subjects”. Applied signal processing and ML algorithms in MATLAB that achieved classification of respiratory diseases with 90% accuracy.</li>
-            </ul>
-        </div>
+        <h3>Senior Scientist & Technical Expert | CSL Behring AG | Bern, Switzerland | 2021 - 2022</h3>
+        <ul>
+            <li>Programmed rfeproducible and repeatable analytics pipelines for automatic data quality controls of pharmaceutical drugs manufacturing processes.</li>
+            <li>Developed and implemented efficient data processing pipelines in R and Visual Basic to streamline data analysis procedures, resulting in reduction of validation errors.</li>
+        </ul>
     </div>
-</div>
+    <div class="job">
+        <h3>Junior Research Scientist | Philips Research, Personal Care and Wellness | Eindhoven, Netherlands | 2016 - 2017</h3>
+        <ul>
+            <li>Designed and implemented one custom front-end web application for image annotation and labeling (Python, Javascript, HTML and CSS) that sped up the data acquisition and pre-processing by 95%.</li>
+            <li>Implemented AI/ML computer vision algorithms for automatic real-time detection and semantic segmentation of skin structures with 98% accuracy.</li>
+            <li>Applied image processing and statistical methods for quantifying the effect of diet on people's facial appearance with statistical metrics.</li>
+        </ul>
+    </div>
+</body>

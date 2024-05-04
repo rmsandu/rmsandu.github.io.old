@@ -1,34 +1,45 @@
 ---
 layout: base
----
+---a
 
 {% include header.html type="page" %}
-
-<div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}" role="main">
-  <div class="row">
-    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
-      {% if page.before-content %}
-        <div class="before-content">
-          {% for file in page.before-content %}
-            {% include {{ file }} %}
-          {% endfor %}
+<div class="container">
+    <div class="row">
+        <!-- Photo column -->
+        <div class="col-md-4">
+            <!-- Insert photo here -->
+            <img src="/assets/img/portrait.jpg" alt="portrait" class="img-fluid img-small">
+            <!-- Insert intro text here -->
+            <p>I am an Applied Research Scientist with a PhD degree in Biomedical Engineering and 10+ years of hands-on practical 
+                experience in the field of AI/ML. Adept at developing research into innovative solutions that create business value. 
+                Resourceful communicator and stakeholder manager, leveraging listening and organizational abilities to solve complex 
+                challenges in a harmonious manner. Welcome to my website, where I write about my latest personal projects, tutorials, and other experiments (at irregularly spaced time intervals).</p>
         </div>
-      {% endif %}
-
-      {{ content }}
-
-      {% if page.after-content %}
-        <div class="after-content">
-          {% for file in page.after-content %}
-            {% include {{ file }} %}
-          {% endfor %}
+        <!-- Experience column -->
+        <div class="col-md-8">
+        <div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}" role="main">  
+                <div class="{% if page.full-width %} col {% else %} col-xl-12 {% endif %}">
+                    {% if page.before-content %}
+                        <div class="before-content">
+                            {% for file in page.before-content %}
+                                {% include {{ file }} %}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    {{ content }}
+                    {% if page.after-content %}
+                        <div class="after-content">
+                            {% for file in page.after-content %}
+                                {% include {{ file }} %}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    {% include comments.html %}
+                    {% if page.js %}
+                        <script src="{{ page.js | relative_url }}"></script>
+                    {% endif %}
+                </div>
+            </div>
         </div>
-      {% endif %}
-
-      {% include comments.html %}
-    {% if page.js %}
-    <script src="{{ page.js | relative_url }}"></script>
-    {% endif %}
     </div>
-  </div>
 </div>
