@@ -13,3 +13,12 @@ body > div {
 footer {
     margin-top: auto
   }
+
+/* Colors */
+h1, h2, h3, h4, h5, h6 {
+    color: #27704f;
+}
+
+.post-heading h1, .post-heading h2, .post-heading h3, .post-heading h4, .post-heading h5, .post-heading h6 {
+    color: #ffffff;
+}
