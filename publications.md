@@ -5,7 +5,6 @@ use-site-title: true
 ---
 
 <div id="publications-content">
-    <h1>An excerpt of my main publications:</h1>
     <ul>
         <li>
             <strong>R.-M. Sandu</strong> et al., 
