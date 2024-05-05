@@ -3,7 +3,6 @@ layout: page
 title: Resume
 published: true
 ---
-
 <div class="container-fluid">
     <div class="row">
         <!-- Experience column -->
@@ -25,13 +24,13 @@ published: true
                     <li>Developed image processing and computer vision workflows for numerical evaluation of image-based liver cancer therapies in clinical interventions.</li>
                     <li>Led the integration of AI/ML technologies in cross-functional European teams from 3 different countries formed of engineers, radiologists and surgeons to implement data-driven decisions minimally invasive ablation treatments.</li>
                     <li>Build statistical, mathematical and ML models using Python, R, and SQL to curate and analyze large, multimodal data including images (CT, MRI) and patient records from European patient clinical trials.</li>
-                    <li>Contributed topeer-reviewed publications and presented at conferences on the topic of computer-assisted medical imaging technologies.</li>
+                    <li>Contributed to peer-reviewed publications and presented at conferences on the topic of computer-assisted medical imaging technologies.</li>
                 </ul>
             </div>
             <div class="job">
                 <h3>Senior Scientist & Technical Expert | CSL Behring AG | Bern, Switzerland | 2021 - 2022</h3>
                 <ul>
-                    <li>Programmed rfeproducible and repeatable analytics pipelines for automatic data quality controls of pharmaceutical drugs manufacturing processes.</li>
+                    <li>Programmed reproducible and repeatable analytics pipelines for automatic data quality controls of pharmaceutical drugs manufacturing processes.</li>
                     <li>Developed and implemented efficient data processing pipelines in R and Visual Basic to streamline data analysis procedures, resulting in reduction of validation errors.</li>
                 </ul>
             </div>
@@ -44,14 +43,15 @@ published: true
                 </ul>
             </div>    
         </div>
-            <h2>Education</h2>
+        <h2>Education</h2>
             <div class="education">
-                <h3>Degree | School | Graduation Year</h3>
-                <p>Major, relevant courses, honors, or distinctions.</p>
+                <h3>PhD in Biomedical Engineering | University of Bern | Bern, Switzerland | 2017 - 2022</h3>
+                    <ul><li>Thesis: “Quantitative assessment of ablation treatments for liver tumours — image-based efficacy analysis and predictive modelling”. Parts of my thesis have been published in peer-reviewed journals that you can read about on my <a href="/publications/" >Publications</a>.</li></ul>
+                <h3>Master of Science (MSc) in Biomedical Engineering | RWTH Aachen University | Aachen, Germany | 2014 - 2017</h3>
+                <ul><li>Thesis: “Image Segmentation and Semantic Description: Tools and Analytics”. Implemented computer vision algorithms for segmentation and classification of skin structures as part of a research project at Philips Research that achieved 98% accuracy with Random Forests.</li></ul>
+                <h3>Bachelor of Science (BSc) in Applied Computer Science | Bucharest, Romania | 2010 - 2014</h3>
+                <ul><li>Thesis: “Volumetric Capnography Respiratory Signals for Spontaneously Breathing Subjects”. Applied signal processing and ML algorithms in MATLAB that achieved classification of respiratory diseases with 90% accuracy.</li></ul>
             </div>
-            <!-- Repeat for other educational qualifications -->
-
-
     </div>
 </div>
 
