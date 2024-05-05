@@ -1,0 +1,15 @@
+/* Sticky footer */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+body > div {
+    padding-bottom: 2rem;
+  }
+   
+footer {
+    margin-top: auto
+  }
