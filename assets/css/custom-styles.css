@@ -22,3 +22,42 @@ h1, h2, h3, h4, h5, h6 {
 .post-heading h1, .post-heading h2, .post-heading h3, .post-heading h4, .post-heading h5, .post-heading h6 {
     color: #ffffff;
 }
+
+
+/* Home page */
+#home-page > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile */
+#home-page img {
+    width: 60vw;
+    border-radius: 50%;
+}
+
+#home-page h1 {
+  text-align: center;
+}
+
+/* Tablet and desktop */
+@media (min-width: 601px) {
+    #home-page img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    #home-page img {
+        width: 300px;
+        height: 300px;
+    }
+
+    #home-page h1 {
+        font-size: 3rem;
+    }
+}
