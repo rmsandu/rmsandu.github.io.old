@@ -8,9 +8,9 @@ tags: [genai, midjourney,photos, dalle]
 published: true
 ---
 
-To be honest, I was never interested in trying Midjourney - sure you can create cool pics, but what could I use them for? After all, I live in a small apartment, and our walls already full of originally painted art that we received as gifts from friends or trifted (sorry, no Bansky here).
+To be honest, I was never interested in trying Midjourney - sure you can create cool pics, but what could I use them for? After all, I live in a small apartment, and our walls are already full of photos of cats and paintings that we received as gifts or thrifted.
 
-That's until I had to teach people with no AI or Tech experience to use Midjourney in a useful way (that could potentially generate payable skills). Now after using it for quite time I have to honestly tell you that I have major doubts about those clickbaity titles from Youtube or Instagram creators that claim you can become a millionaire overnight with MJ design (can I call it MJ and not Midjourney? Or am I infringing some Spiderman copywright?). That being said: I still learnt a lot of handy tricks for dealing with Midjourney and controlling the output to your needs. Before we start, I recommend you check the official list of [Midjourney parameters](https://docs.midjourney.com/docs/parameter-list) and try them out.
+That's until I had to teach people with no AI or tech experience to use Midjourney in a useful way (that could potentially generate payable skills). Now after using it for quite time I have to honestly tell you that I have major doubts about those clickbaity titles from Youtube or Instagram creators that claim you can become a millionaire overnight with MJ design (can I call it MJ and not Midjourney? Or am I infringing some Spiderman copywright?). That being said: I still learnt a lot of handy tricks for dealing with Midjourney and controlling the output based on the requirements I had. Before we start, I recommend you check the official list of [Midjourney parameters](https://docs.midjourney.com/docs/parameter-list) and try them all out to better understand how Midjourney works with its [prompts](https://docs.midjourney.com/docs/prompts-2).
 
 ## Midjourney camera settings for realistic photos
 
@@ -50,7 +50,7 @@ These are the prompts I used for the upper and lower row of photos:
 
 ## Midjourney knows thy products (and architects and famous furniture brands)
 
-This is in my opinion the part where Midjourney excels. I was pleasantly surprised to see how perfect it can depict famous brands like Coca-Cola, Pepsi, iPhone, Samsung, Levi's etc. Funnily enough, it is also aware of IKEA specific models and their funny Swedish names. It doesn't always get them right, but the final generated picture looks uncannily like an IKEA furnished apartment. I also tried generating buildings in specific architectual styles (Mies van der Rohe, Eiffel, Antonio Gaudi, etc.),and again, MJ blew my mind away. **This huge knowledge of database is the one of the most useful aspects of Midjourney in my opinion.** Yes, the editing options that Midjourney offers, are also useful, but we will get into that in a different post.
+This is in my opinion the part where Midjourney excels. I was pleasantly surprised to see how perfect it can depict famous brands like Coca-Cola, Pepsi, iPhone, Samsung, Levi's etc. Funnily enough, it is also aware of IKEA specific models and their funny Swedish names. It doesn't always get them right, but the final generated picture looks uncannily like an IKEA furnished apartment. I also tried generating buildings in specific architectual styles (Mies van der Rohe, Eiffel, Antonio Gaudi, etc.),and again, MJ blew my mind away. **This huge knowledge of database is the one of the most useful aspects of Midjourney in my opinion.** Yes, the editing options that Midjourney offers, are also useful, but for tailored or custom modifications stick to the classic like Adobe Photoshop, Gimp, etc..
 
 ![CocaCola](/assets/img/coca-cola.png){: .mx-auto.d-block :}
 *Fancy a can of Coca-Cola? I  sure do after seeing this photo.*
@@ -69,16 +69,16 @@ Here are some examples of prompts I used:
 Somehow, it's a hit and miss with generating text with Midjourney. I got decent results after repeating the text several times and using prompts that included the words "title, label, text, letters, written, named, etc". and all sort of variations for text. You get the gist. However, I needed the least amount of attempts to get the text right when it was either very short or when I used the [Vary Region Option](https://docs.midjourney.com/docs/vary-region).
 
 ![Text in MJ](/assets/img/chanel_wrong_text.png){: .mx-auto.d-block :}
-*Spelling is hard for everyone, especially French words (Prompt: "Commercial product photography, a bottle of Chanel perfume,background with wooden panels and orchids" )*
+*Spelling is hard for everyone, especially French words. Prompt: "Commercial product photography, a bottle of Chanel perfume,background with wooden panels and orchids"*
 
 ## Limitations of Midjourney
 
 - If you have a very specific request from a client, company etc., get ready to strugle back & forth with the prompting and variations until you will probably consume all your credits.
-- Midjourney still strugles with the laws of physics and counting (see the egg photo below.)
-- Sometimes weird logos or brand names or watermarks will be added on photos. Remember to use [negative prompting](https://docs.midjourney.com/docs/no-1) with the parameter `--no`.
-- Text is very hard to correctly generate, especially long sentences. Stick to a few simple words.
-- Vary region is still quite buggy - if the region is not big enough it's not going to change anything. If your prompt for the vary region differs too much from the original content of the photo, again nothing will be generated
-- Photos of women are uncessarily sexual or sensual (IN MY OPINION). Every time I tried to generate a photograph of a woman she had a cleavage. Like why?
+- Midjourney still strugles with the laws of physics and counting (see the egg photos below.)
+- Sometimes weird logos or brand names or watermarks will be added on photos. Remember to use [negative prompting](https://docs.midjourney.com/docs/no-1) with the parameter `--no` and also say a little prayer for more effect.
+- Text is very hard to correctly generate, especially long sentences. Stick to a few simple words, use vary region, and practise a few mindfulness exercises while waiting on your 15th attempt to be finished.
+- Vary region is still quite buggy - if the region is not big enough it's not going to change anything. If your prompt for the vary region differs too much from the original content of the photo, again nothing will be changed.
+- Photos of women are uncessarily sexual or sensual (in my opinion). Every time I tried to generate a photograph of a woman she had a cleavage. Like why?
 
 ![Midjourney makes very strong eggs](/assets/img/eggs.png){: .mx-auto.d-block :}
-*Midjourney makes very strong eggs (Prompt: "an egg dropped on the floor in an empty room" )*
+*Midjourney makes very strong eggs. Prompt: "an egg dropped on the floor."*

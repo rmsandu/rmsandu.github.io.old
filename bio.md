@@ -18,7 +18,7 @@ published: true
                 </ul>
             </div>
             <div class="job">
-                <h4>PhD Researcher at ARTORG Center for Biomedical Engineering Research | University of Bern | Bern, Switzerland | 2017 - 2022</h4>
+                <h4>PhD Researcher | University of Bern | Bern, Switzerland | 2017 - 2022</h4>
                 <ul>
                     <li>Led the integration of AI/ML technologies in cross-functional European teams from 3 different countries formed of engineers, radiologists and surgeons to implement data-driven decisions minimally invasive ablation treatments.</li>
                     <li>Build statistical, mathematical and ML models using Python, R, and SQL to curate and analyze large, multimodal data including images (CT, MRI) and patient records from European patient clinical trials.</li>
