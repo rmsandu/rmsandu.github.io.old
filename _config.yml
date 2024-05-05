@@ -20,7 +20,7 @@ author: Raluca-Maria Sandu
 ###############################################
 
 navbar-links:
-  About Me: "bio"
+  Resume: "bio"
   Publications: "resume"
   Blog: "blog"
   #  - Beautiful Jekyll: "https://beautifuljekyll.com"

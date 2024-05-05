@@ -1,0 +1,8 @@
+
+.container {
+    max-width: 100%; /* Extends the container to full width */
+    padding: 0 15px; /* Adjusts the padding to be minimal but keeps some spacing */
+}
+.no-padding {
+    padding-left: 0; /* Removes padding on the left side of the column */
+}
