@@ -2,32 +2,153 @@
 layout: page
 ---
 
-<div id="home-page">
-    <div class="page-heading intro-header">
-        <img src="/assets/img/portrait_scaled.jpg" alt="portrait">
-        <h1>Hi there, I'm Raluca</h1>
+<div id="home-page" class=row>
+    <div class="col-md-6" style="width: 5%;">
+        <div class="page-heading intro-header">
+            <img src="/assets/img/portrait_scaled.jpg" alt="portrait"  style="max-width: 50%; height: auto;">
+            <h1>Hi there, I'm Raluca</h1>
+        </div>
+        <div>
+            <div class="icon-text">
+                <i class="fas fa-briefcase fa-3x"></i>
+                <h2>Work</h2>
+                <div>My research interests lie in the application of machine learning methods for image and language tasks. I currently work as a Machine Learning Engineer at <a href="https://www.accenture.com/ch-en">Accenture.</a></div>
+            </div>
+            <div class="icon-text">
+                <i class="fas fa-graduation-cap fa-3x"></i>
+                <h2>Education</h2>
+
+                <div>I have graduated with a PhD in Biomedical Engineering, where my thesis topic was analysis of medical images (CT scans) for improving liver cancer treatments. You can find more information about my PhD topic in one of my <a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2021.623098/full">publications</a>. My PhD research has been integrated into a clinical <a href="https://www.cascination.com/en/ablasure">commercial product</a> at a Swiss medical device company.</div>
+            </div>
+
+            <div class="icon-text">
+                <i class="fas fa-user fa-3x" aria-hidden="true"></i>
+                <h2>Hobbies</h2>
+                <div>I like to spend time outdoors doing sports like surfing, skiing, snowboarding, or SUP. Additionally, I enjoy reading fiction and teaching new tricks to my cats.</div>
+            </div>
+
+        </div>
     </div>
-    <div>
+    <div class="col-md-6">
+        <div class="posts-list">
+        {{ content }}
+        {% assign posts = paginator.posts | default: site.posts %}
 
-        <div class="icon-text">
-            <i class="fas fa-briefcase fa-3x"></i>
-            <h2>Work</h2>
-            <div>My research interests lie in the application of machine learning methods for image and language tasks. I currently work as a Machine Learning Engineer at <a href="https://www.accenture.com/ch-en">Accenture.</a></div>
+            <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
+            <ul class="posts-list list-unstyled" role="list">
+            {% for post in posts %}
+            <li class="post-preview">
+                <article>
+
+                {%- capture thumbnail -%}
+                    {% if post.thumbnail-img %}
+                    {{ post.thumbnail-img }}
+                    {% elsif post.cover-img %}
+                    {% if post.cover-img.first %}
+                        {{ post.cover-img[0].first.first }}
+                    {% else %}
+                        {{ post.cover-img }}
+                    {% endif %}
+                    {% else %}
+                    {% endif %}
+                {% endcapture %}
+                {% assign thumbnail=thumbnail | strip %}
+
+                {% if site.feed_show_excerpt == false %}
+                {% if thumbnail != "" %}
+                <div class="post-image post-image-normal">
+                    <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+                    <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+                    </a>
+                </div>
+                {% endif %}
+                {% endif %}
+
+                <a href="{{ post.url | absolute_url }}">
+                    <h2 class="post-title">{{ post.title | strip_html }}</h2>
+
+                    {% if post.subtitle %}
+                    <h3 class="post-subtitle">
+                    {{ post.subtitle | strip_html }}
+                    </h3>
+                    {% endif %}
+                </a>
+
+                {% if post.author %}
+                    <span>By <strong>{{ post.author | strip_html }}</strong></span>
+                {% endif %}
+                <p class="post-meta">
+                    {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+                    Posted on {{ post.date | date: date_format }}
+                </p>
+
+                {% if thumbnail != "" %}
+                <div class="post-image post-image-small">
+                    <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+                    <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+                    </a>
+                </div>
+                {% endif %}
+
+                {% unless site.feed_show_excerpt == false %}
+                {% if thumbnail != "" %}
+                <div class="post-image post-image-short">
+                    <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+                    <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+                    </a>
+                </div>
+                {% endif %}
+
+                <div class="post-entry">
+                    {% assign excerpt_length = site.excerpt_length | default: 50 %}
+                    {{ post.excerpt | strip_html | truncatewords: excerpt_length }}
+                    {% assign excerpt_word_count = post.excerpt | number_of_words %}
+                    {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
+                    <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
+                    {% endif %}
+                </div>
+                {% endunless %}
+
+                {% if site.feed_show_tags != false and post.tags.size > 0 %}
+                <div class="blog-tags">
+                    <span>Tags:</span>
+                    <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
+                    <ul class="d-inline list-inline" role="list">
+                    {% for tag in post.tags %}
+                    <li class="list-inline-item">
+                        <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
+                    </li>
+                    {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                </article>
+            </li>
+            {% endfor %}
+            </ul>
+
+            {% if paginator.total_pages > 1 %}
+            <ul class="pagination main-pager">
+            {% if paginator.previous_page %}
+            <li class="page-item previous">
+                <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">
+                <i class="fas fa-arrow-left" alt="Newer Posts"></i>
+                <span class="d-none d-sm-inline-block">Newer Posts</span>
+                </a>
+            </li>
+            {% endif %}
+            {% if paginator.next_page %}
+            <li class="page-item next">
+                <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">
+                <span class="d-none d-sm-inline-block">Older Posts</span>
+                <i class="fas fa-arrow-right" alt="Older Posts"></i>
+                </a>
+            </li>
+            {% endif %}
+            </ul>
+            {% endif %}
         </div>
-
-        <div class="icon-text">
-            <i class="fas fa-graduation-cap fa-3x"></i>
-            <h2>Education</h2>
-
-            <div>I have graduated with a PhD in Biomedical Engineering, where my thesis topic was analysis of medical images (CT scans) for improving liver cancer treatments. You can find more information about my PhD topic in one of my <a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2021.623098/full">publications</a>. My PhD research has been integrated into a clinical <a href="https://www.cascination.com/en/ablasure">commercial product</a> at a Swiss medical device company.</div>
-        </div>
-
-        <div class="icon-text">
-            <i class="fas fa-user fa-3x" aria-hidden="true"></i>
-            <h2>Hobbies</h2>
-            <div>I like to spend time outdoors doing sports like surfing, skiing, snowboarding, or SUP. Additionally, I enjoy reading fiction and teaching new tricks to my cats.</div>
-        </div>
-
     </div>
 </div>
 
