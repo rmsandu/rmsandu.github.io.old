@@ -3,28 +3,36 @@ layout: page
 ---
 
 <div id="home-page" class=row style="margin-top: 0; padding-top: 0;">
-    <div class="col-md-6" style="margin-top: 0; padding-top: 0; font-size: 0.8em;" >
+    <div class="col-lg-6" style="margin-top: 0; padding-top: 0; font-size: 0.8em;" >
         <div class="page-heading intro-header" style="margin-top: 0; padding-top: 0;">
             <img src="/assets/img/portrait_scaled.jpg" alt="portrait"  style="max-width: 75%; height: auto;">
         </div>
         <div>
             <div class="icon-text">
-                <i class="fas fa-briefcase fa-2x"></i>
+                <i class="fas fa-briefcase fa-2x" aria-hidden="true"></i>
                 <div>My research interests lie in the application of machine learning methods for image and language tasks. I currently work as a Machine Learning Engineer at <a href="https://www.accenture.com/ch-en">Accenture.</a></div>
             </div>
             <div class="icon-text">
-                <i class="fas fa-graduation-cap fa-2x"></i>
-                <div>I have graduated with a PhD in Biomedical Engineering, where my thesis topic was analysis of medical images (CT scans) for improving liver cancer treatments. You can find more information about my PhD topic in one of my <a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2021.623098/full">publications</a>. My PhD research has been integrated into a clinical <a href="https://www.cascination.com/en/ablasure">commercial product</a> at a Swiss medical device company.</div>
+                <i class="fas fa-graduation-cap fa-2x" aria-hidden="true"></i>
+                <div>I have graduated with a PhD in Biomedical Engineering, where my thesis topic was analysis of medical images for improving liver cancer treatments. You can find more information about my PhD topic in one of my <a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2021.623098/full">publications</a>. My PhD research has been integrated into a clinical <a href="https://www.cascination.com/en/ablasure">commercial product</a> at a Swiss medical device company.</div>
             </div>
 
             <div class="icon-text">
-                <i class="fas fa-user fa-2x" aria-hidden="true"></i>
+                <i class="fas fa-terminal fa-2x" aria-hidden="true" style="margin: 0; padding: 0; vertical-align: middle;"></i>
+                <div> Python, PyTorch, AWS, Generative AI, Machine Learning, Computer Vision, Diffusion Models, CI/CD, MLOps
+                    
+                </div>
+            </div>
+
+            <div class="icon-text">
+                <i class="fas fa-paw fa-2x" aria-hidden="true"></i>
                 <div>I like to spend time outdoors doing sports like surfing, skiing, snowboarding, or SUP. Additionally, I enjoy reading fiction and teaching new tricks to my cats.</div>
             </div>
 
         </div>
     </div>
-    <div class="col-md-6">
+
+    <div class="col-lg-6">
         <div class="posts-list">
         {{ content }}
         {% assign posts = paginator.posts | default: site.posts %}
