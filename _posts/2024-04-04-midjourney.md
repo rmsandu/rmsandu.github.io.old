@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Easy Image Generation with Midjourney - it's beautiful, but is it useful?
-subtitle: Creating incredibly realistic photos with Midjourney
+title: Prompts, tips, tricks for photography with Midjourney
+subtitle: Creating incredibly realistic photos with Midjourney 
 cover-img: /assets/img/cover_mj_post_youaremystar.png
-thumbnail-img: /assets/img/thumbnail_ai.png
+thumbnail-img: /assets/img/portrait_ai.png
 tags: [genai, midjourney,photos, dalle]
 published: true
 ---
