@@ -4,19 +4,19 @@ title: Fine-tuning with Stable Diffusion XL
 subtitle: Fine-tuning your own images with Stable Diffusion XL - Just another project with my cats
 cover-img: /assets/img/Thor_Hawaii_cover.jpg
 thumbnail-img: /assets/img/media_images_validation_1300.png
-tags: [stable diffusion, genai, gradio, segmind, dalle]
+tags: [stable diffusion, genai, gradio, sdxl, midjourney, sd3, finetuning, python, google colab]
 published: true
 ---
 
 
-Late to the party as usual, I finally got around fine-tuning my own images with [Stable Diffusion XL 1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) on a free-tier [Google Colab](https://colab.research.google.com/drive/15oWr8S3OHIau4GwpRybBg9RvM6WHwhUG?usp=sharing) using LoRA. Despite many tutorials being available so far, it took a bit of trial and error to get optimal results. I used the SDXL weights from StabilityAI on images of my cat Thor and fine-tuned them using the [Dreambooth method](https://arxiv.org/pdf/2208.12242) which requires only a few (how many is a few?) images of the subject. I chose SDXL because I wanted my photos to have a high resolution (1024x1024).There seems to be conflicting opinions on the best parameters to use for fine-tuning, especially when it comes to objects and not people's faces. Many blogs, tutorials, papers, etc., suggested using prior-preservation when fine-tuning on images of pets, whereas other resources insisted prior-preservation is redundant for anything except human faces. Some tutorials suggest that a 200-400 training steps should be sufficient for animals, but I found that 500-1000 steps give better results. 
+Late to the party as usual, I finally got around fine-tuning my own images with [Stable Diffusion XL 1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) on a free-tier [Google Colab](https://colab.research.google.com/drive/15oWr8S3OHIau4GwpRybBg9RvM6WHwhUG?usp=sharing) using LoRA. Despite many tutorials being available so far, it took a bit of trial and error to get optimal results. I used the SDXL weights from StabilityAI on images of my cat Thor and fine-tuned them using the [Dreambooth method](https://arxiv.org/pdf/2208.12242) which requires only a few (how many is a few?) images of the subject. I chose SDXL because I wanted my photos to have a high resolution (1024x1024). There seems to be conflicting opinions on the best parameters to use for fine-tuning, especially when it comes to objects and not people's faces. Many blogs, tutorials, papers, etc., suggested using prior-preservation when fine-tuning on images of pets, whereas other resources insisted prior-preservation is redundant for anything except human faces. Some tutorials suggest that a 200-400 training steps should be sufficient for animals, but I found that 500-1000 steps give better results. 
 
 ## Input data
 
 In order to start training we need the following:
 - the [Diffusers libraries](https://github.com/huggingface/diffusers)
 - the [SDXL Dreambooth Python script](https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/train_dreambooth_lora_sdxl.py) and [README](https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/README_sdxl.md )
-- at least 16 GB of VRAM (a Tesla GPU T4 from [Google Colab](https://colab.research.google.com/drive/15oWr8S3OHIau4GwpRybBg9RvM6WHwhUG?usp=sharing))
+- at least 16 GB of VRAM (because I am GPU poor, a free Tesla GPU T4 in my case from [Google Colab](https://colab.research.google.com/drive/15oWr8S3OHIau4GwpRybBg9RvM6WHwhUG?usp=sharing))
 - 10 - 15 images of your subject in various poses, lighting, backgrounds, angles - as much variety as possible of the subject. 
 
 Although the original Dreambooth paper mentions using 3-5 images from my experience and others the optimal number is around 10-15 images of the subject. I used 15 images of Thor in various poses with various backgrounds. As we can notice, Thor is mostly centered in the photos and there are no other pets (his brother) or objects. If the photo is cluttered with othe objects, humans, pets, etc Dreambooth will not be able to learn the unique subject we are training to fine-tune. Speaking of unique, the principle of Dreambooth is using an unique token (word) associated with the subject to be injected in the "dictionary" of the model during the fine-tuning process.This is called the `instance_prompt` and can be something like `"a photo of <TOK> cat"`, where `TOK` is my unique identifier describing Thor. The word describing the generic class noun of the subject (i.e. cat in this context) is also needed for better results.
@@ -24,7 +24,7 @@ Although the original Dreambooth paper mentions using 3-5 images from my experie
 ![Thor in various poses](/assets/img/Thor_training_images.png){: .mx-auto.d-block : "}
 *Training images of my cat Thor taken in various poses with different background.*
 
-The motivation behind linking the unique identifier `<TOK>)` with a class noun `CAT` during training is to leverage the model’s strong visual prior of the subject’s class. In other words, it will be much easier for the model to learn what Thor looks like if we tell it that it is a cat and not a handsome Marvel actor. The DreamBooth paper mentions that including a relevant noun in the training prompts decreased training speed and increased the visual fidelity of the subject’s reproduced features.
+The motivation behind linking the unique identifier `<TOK>` with a class noun `CAT` during training is to leverage the model’s strong visual prior of the subject’s class. In other words, it will be much easier for the model to learn what Thor looks like if we tell it that it is a cat and not a handsome Marvel actor. The DreamBooth paper mentions that including a relevant noun in the training prompts decreased training speed and increased the visual fidelity of the subject’s reproduced features.
 
 ![Thor](/assets/img/Thor_Marvel.png){: .mx-auto.d-block : "}
 *Wrong Thor, I guess?. Photo generated with [Stable Diffusion 3](https://huggingface.co/spaces/stabilityai/stable-diffusion-3-medium), prompt: "a photo of Thor Marvel actor with an orange cat and his hammer, lighting and storm in the background"*
@@ -122,7 +122,7 @@ HuggingFace has already a great notebook example [here](https://colab.research.g
 
 ## Results
 
-All in all my results were pretty good with and without prior-preservation. When doing inference, I noticed that I get better results when my number of inference steps are around 80-100. Otherwise Thor looks quite distorted, has extra limbs or is simply another cat. SDXL was also unable to render Thor wet swimming underwater as in the tutorial they showed with the dog photos. Another thing that I noticed is that SDXL really strugles with complex prompts, unlike Midjourney. Every time I wanted to add several elements and be super specific about where Thor should be placed and how he should look like the model outputed gibberish. Moreover, as you probably noticed Thor is wearing a blue collar with AirTag but the model completely failed to render this in any instance. Perhaps I should have trained it on photos of Thor without the collar? Next time.
+All in all my results were pretty good with and without prior-preservation. When doing inference, I noticed that I get better results when my number of inference steps are around 80-100. Otherwise Thor looks quite distorted, has extra limbs or is simply another cat. SDXL was also unable to render Thor wet swimming underwater as in the tutorial they showed with the dog photos. Another thing that I noticed is that SDXL really strugles with complex prompts, unlike Midjourney. Every time I wanted to add several elements and be super specific about where Thor should be placed and how he should look like the model outputed gibberish. Moreover, as you probably noticed Thor is wearing a collar with AirTag but the model completely failed to render this in any instance. It could also be my fault for mixing photos of Thor with a red collar and blue collar. Perhaps I should have trained it on photos of Thor without the collar? Next time.
 
 ## Useful resources:
 
@@ -171,4 +171,4 @@ Python Script if you have the resources to run Stable Diffusion locally (I don't
 *Prompt: photo of TOK cat dressed as a laywer, surrounded by letters in an office.* 
 
 ![Thor](/assets/img/generated_460_Steps30_Superman.jpg){: .mx-auto.d-block :}
-*Prompt: photo of TOK cat dressed as a laywer, surrounded by letters in an office.* 
+*Prompt: photo of TOK cat dressed as a Superman.* 
