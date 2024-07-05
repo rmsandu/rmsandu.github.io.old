@@ -234,7 +234,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 #pagination
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 paginate_path: "/blog/page:num/"
 
