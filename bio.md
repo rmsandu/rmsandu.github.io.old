@@ -3,6 +3,9 @@ layout: page
 title: Resume
 published: true
 ---
+
+You can see a compact version of my CV in PDF format <a href="/Raluca_Sandu_CV.pdf" target="_blank">here</a>. Otherwise, read below (not really kept to date.)
+
 <div class="container-fluid">
     <div class="row">
         <!-- Experience column -->
@@ -13,7 +16,7 @@ published: true
                 <ul>
                     <li>Team lead rapid prototyping projects using Gen(AI) tools, delivering end-to-end projects.</li>
                     <li>Train image diffusion pipeline that generated novel, unseen 3D shapes 90% faster than conventional manual design methods, leveraging generative modeling algorithms of neural implicit fields.</li>
-                    <li>Build Stable Diffusion prototypes using fine tuning, in-painting, knowledge distillation, Gradioand AWS.</li>
+                    <li>Build diffusion prototypes using fine tuning, in-painting, knowledge distillation - HuggingFace, Diffusers, AWS, Sagemaker, Gradio, etc..</li>
                     <li>Apply computer vision models (YOLO, SAM, OWL, Pytorch, MONAI, Vision Foundation Models) for image classification and object detection in manufacturing, life sciences and energy sectors.</li>
                 </ul>
             </div>
@@ -34,7 +37,7 @@ published: true
             <div class="job">
                 <h4>Junior Research Scientist | Philips Research | Eindhoven, Netherlands | 2016 - 2017</h4>
                 <ul>
-                    <li>Designed and implemented one custom front-end web application for image annotation and labeling (Python, Javascript, HTML and CSS) that sped up the data acquisition and pre-processing by 95%.</li>
+                    <li>Designed and implemented one custom front-end web application for image annotation and labeling (Python, Javascript, HTML and CSS) that sped up the data acquisition and pre-processin.</li>
                     <li>Applied image processing and statistical methods for quantifying the effect of diet on people's facial appearance with statistical metrics.</li>
                 </ul>
             </div>    

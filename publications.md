@@ -68,7 +68,8 @@ publications:
     conference: "Biomedica 2015 Conference - The European Life Sciences Summit"
     location: "Aachen, Germany"
     month: "Oct"
-    link:
+    link: "/Biomedica_Sandu_2015.pdf" 
+    summary: Capnography is a simple non-invasive technique for monitoring the CO2 concentration in the exhaled breath. It is used to detect early adverse respiratory events and life-threatening conditions by cardiologists, pediatrics, in respiratory therapy and emergency care. Although it describes the patient’s cardiorespiratory dynamics the technique is still underutilized due to a lack of quantitative means for assessing it. An automated analysis of the capnogram would allow a quantitative assessment of the cardiorespiratory states of both healthy and diseased patients. The typical feature values determined in this study for healthy subjects are comparable with values reported in related literature.
     year: 2015  
 ---
 
